@@ -130,6 +130,8 @@ menulist[1:] = sorted(menulist[1:])
 # Repeat process above, but make the categories more user/reader friendly
 menu = list(map(lambda x : x.replace("_", " "), menulist))
 menu[1:] = sorted(menu[1:])
+menu[31] = "Korea, South"
+menu[51] = 'South Africa, Republic of'
 
 # This is our Select widget.
 select = Select(title="Reported Origin:", options=menu)
