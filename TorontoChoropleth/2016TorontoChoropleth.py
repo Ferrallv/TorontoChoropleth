@@ -8,7 +8,7 @@ from bokeh.plotting import figure, curdoc
 from bokeh.models import GeoJSONDataSource, LinearColorMapper, ColorBar, HoverTool
 from bokeh.palettes import brewer
 from bokeh.models.widgets import Select
-from bokeh.layouts import widgetbox, row
+from bokeh.layouts import widgetbox, column
 
 ###
 
@@ -138,7 +138,7 @@ select.on_change("value", origindata)
 ###
 
 # To layout our graph
-layout = row(p, widgetbox(select))
+layout = column(p, widgetbox(select))
 curdoc().add_root(layout)
 
 #Display figure.
