@@ -1,0 +1,2 @@
+web: bokeh serve --port=$PORT --address=0.0.0.0 --allow-websocket-origin=torontochoropleth.herokuapp.com --use-xheaders 2016TorontoChoropleth.py
+
