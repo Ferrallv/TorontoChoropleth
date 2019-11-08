@@ -104,7 +104,7 @@ hover = HoverTool(tooltips = [("Neighbourhood","@Neighbourhood"),("Population", 
 color_bar = ColorBar(color_mapper=color_map, label_standoff= 8, width = 20, height = 500,
                      border_line_color=None, location = (0,0), orientation = "vertical")
 
-# ou plot!
+# Our plot!
 p = figure(title = "Total Immigrant Population Who Reported Their Origin by Neighbourhood", plot_height = 600 , plot_width = 950, tools = [hover])
 
 # For aesthetic reasons, getting rid of excess lines and borders
@@ -112,7 +112,7 @@ p.axis.visible = False
 p.grid.visible = False
 p.outline_line_color = None
 
-#Add patch renderer to figure.
+# Add patch renderer to figure.
 p.patches("xs", "ys", source = geosource, fill_color = {"field" : "TotalPopulation", "transform" : color_map},
               line_color = "black", line_width = 0.25, fill_alpha = 1)
 
