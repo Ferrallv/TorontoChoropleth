@@ -1,7 +1,7 @@
 # TorontoChoropleth
 2016 Canadian Census Data on immigrants reported country of origin aggregated and visualized into Toronto neighbourhoods.
 
-![Toronto Choropleth](images/staticChoropleth.png.png)
+![Toronto Choropleth](/images/staticChoropleth.png.png)
 
 A static result is seen above.
 
